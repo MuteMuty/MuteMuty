@@ -70,11 +70,4 @@ const erik = {
 
 <p align="center"><sub>Plus: Bloc · React Native · Material UI · REST APIs · Oracle DB · Java EE · Claude Code &amp; agentic workflows · LLM tool use</sub></p>
 
-## 🐍 Activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MuteMuty/MuteMuty/output/github-snake-dark.svg">
-  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/MuteMuty/MuteMuty/output/github-snake.svg" width="100%">
-</picture>
-
 <p align="center"><sub>Hiring for mobile, front-end or AI work? <a href="mailto:mutemuty1@gmail.com">Let's talk</a>.</sub></p>
