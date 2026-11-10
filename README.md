@@ -39,18 +39,19 @@ const erik = {
 ## ✨ Featured work
 
 <p align="center">
+  <a href="https://afterstep.brightloopapps.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-afterstep-dark.svg"><img alt="Afterstep: a daily puzzle in Rust and WebAssembly" src="assets/card-afterstep-light.svg" width="49%"></picture></a>
   <a href="https://breza-app.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-breza-dark.svg"><img alt="Breza: private quit-vaping app" src="assets/card-breza-light.svg" width="49%"></picture></a>
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-dragonhack-dark.svg"><img alt="DragonHack 2024: Best Software Hack" src="assets/card-dragonhack-light.svg" width="49%"></picture>
   <a href="https://github.com/MuteMuty/extreme-weather-event-notifier"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-weather-dark.svg"><img alt="Extreme Weather Notifier" src="assets/card-weather-light.svg" width="49%"></picture></a>
   <a href="https://github.com/MuteMuty/telco-churn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-churn-dark.svg"><img alt="Telco Churn Prediction" src="assets/card-churn-light.svg" width="49%"></picture></a>
   <a href="https://github.com/MuteMuty/ioi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-pitch-dark.svg"><img alt="Pitch Control: voice-controlled Flutter game" src="assets/card-pitch-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/MuteMuty/luxonis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-luxonis-dark.svg"><img alt="Apartment Listings: React + PostgreSQL" src="assets/card-luxonis-light.svg" width="49%"></picture></a>
 </p>
 
 <details>
 <summary><b>More projects</b></summary>
 <br>
 
+- **[Apartment Listings](https://github.com/MuteMuty/luxonis)**: scraped real-estate listings in an ad-free React app with PostgreSQL and Docker
 - **[Vectura](https://github.com/MuteMuty/vectura)**: Flutter ride-sharing app with real-time tracking, location services and maps
 - **[Src](https://github.com/MuteMuty/src)**: Flutter demo web shop and marketplace
 - **[Weather](https://github.com/MuteMuty/weather)**: Flutter forecast app with real-time updates and alerts
@@ -58,6 +59,8 @@ const erik = {
 - **[HPC](https://github.com/MuteMuty/HPC)**: high-performance computing coursework in C++
 
 </details>
+
+🧪 More experiments live in **[BrightLoop Lab](https://github.com/MuteMuty/lab)**, where new projects ship regularly.
 
 ## 🛠️ Tech I work with
 
