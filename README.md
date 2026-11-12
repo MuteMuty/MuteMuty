@@ -7,6 +7,7 @@
   <a href="https://www.linkedin.com/in/erik-pahor/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-erik--pahor-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:mutemuty1@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-get_in_touch-0B7A59?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://brightloopapps.com/"><img alt="BrightLoopApps" src="https://img.shields.io/badge/Studio-BrightLoopApps-F5B971?style=for-the-badge&logo=googlechrome&logoColor=black"></a>
+  <a href="https://lab.brightloopapps.com/"><img alt="BrightLoop Lab" src="https://img.shields.io/badge/Play-BrightLoop_Lab-7CF2C4?style=for-the-badge&logo=githubactions&logoColor=black"></a>
   <img alt="Open to work" src="https://img.shields.io/badge/Open_to_work-Dec_2026-7CF2C4?style=for-the-badge&logoColor=black">
 </p>
 
@@ -21,10 +22,23 @@ const erik = {
   experience: "4+ years · Celtra, FirstClass, RESULT, Kamino, EFOS",
   focus:      ["Mobile (Flutter)", "Front-end (React, Vue)", "AI that takes actions"],
   education:  "MSc Computer & Information Science, University of Ljubljana",
-  currently:  "Building small, private apps at BrightLoopApps",
+  currently:  ["Small, private apps at BrightLoopApps", "BrightLoop Lab, a lab that builds itself"],
   openTo:     ["Mobile", "Front-end", "Full-stack", "AI engineer", "Forward-deployed"],
 };
 ```
+
+## 🌙 BrightLoop Lab: a lab that builds itself
+
+<a href="https://lab.brightloopapps.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-lab-dark.svg"><img alt="BrightLoop Lab: every night, agents pick ideas from the queue, build them, playtest them in a real browser and ship only what passes." src="assets/card-lab-light.svg" width="100%"></picture></a>
+
+My agent pipeline, running in production. Every night a **director** agent picks the next tasks from the [issue queue](https://github.com/MuteMuty/lab/issues): my ideas, screened visitor suggestions, and polish that its own **scout** agents found. A **builder** agent opens a pull request for each task. An independent **playtester** agent then checks it on phone and desktop in a real browser. Only a pass is merged and deployed, with a live smoke test and **automatic rollback**. A command guard enforces the [safety rules](https://github.com/MuteMuty/lab/blob/main/nightshift/SAFETY.md) on every shell command, and each night ends with a [log](https://github.com/MuteMuty/lab/tree/main/nightshift/logs) and a morning report.
+
+<p align="center">
+  <a href="https://lab.brightloopapps.com/"><b>▶ Play the lab</b></a> ·
+  <a href="https://github.com/MuteMuty/lab/tree/main/nightshift">How the night shift works</a> ·
+  <a href="https://github.com/MuteMuty/lab/tree/main/nightshift/logs">Night logs</a> ·
+  <a href="https://lab.brightloopapps.com/#suggest">Suggest an idea</a>
+</p>
 
 ## 🚀 What I've shipped
 
@@ -60,7 +74,7 @@ const erik = {
 
 </details>
 
-🧪 More experiments live in **[BrightLoop Lab](https://github.com/MuteMuty/lab)**, where new projects ship regularly.
+🧪 New experiments ship every night in **[BrightLoop Lab](https://lab.brightloopapps.com/)** ([source](https://github.com/MuteMuty/lab)).
 
 ## 🛠️ Tech I work with
 

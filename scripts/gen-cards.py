@@ -191,7 +191,69 @@ def card(c, label, title, linked, desc, chips):
 </svg>'''
 
 
+# ---------------------------------------------------------------- lab banner
+def lab_banner(c):
+    """Wide feature card for BrightLoop Lab: the copy on the left, the nightly loop on the right."""
+    BW, BH = 1000, 270
+    cx, cy, r = 790, 135, 92
+    nodes = [(-90, "IDEAS"), (0, "BUILD"), (90, "PLAYTEST"), (180, "SHIP")]
+    import math
+    pills = []
+    for ang, txt in nodes:
+        x = cx + r * math.cos(math.radians(ang)); y = cy + r * math.sin(math.radians(ang))
+        w = len(txt) * 8.2 + 26
+        pills.append(f'<rect x="{x - w / 2:.1f}" y="{y - 14:.1f}" width="{w:.1f}" height="28" rx="14" fill="{c["panel"]}" stroke="{c["accent"]}" stroke-width="1.5"/>'
+                     f'<text x="{x:.1f}" y="{y + 4.5:.1f}" text-anchor="middle" class="node">{txt}</text>')
+    chips, x = [], 48
+    for ch in ["Agents", "Playwright", "Cloudflare", "Rust + WASM"]:
+        w = len(ch) * 7.3 + 22
+        chips.append(f'<rect x="{x}" y="206" width="{w:.0f}" height="26" rx="13" fill="{c["bg"]}" stroke="{c["border"]}"/>'
+                     f'<text x="{x + w / 2:.0f}" y="223.5" text-anchor="middle" class="chip">{escape(ch)}</text>')
+        x += w + 8
+    desc = ["Every night, agents pick ideas from the queue, build them,",
+            "playtest them in a real browser and ship only what passes,",
+            "with live smoke tests and automatic rollback."]
+    lines = "".join(f'<text x="48" y="{132 + i * 23}" class="desc">{escape(l)}</text>' for i, l in enumerate(desc))
+    ring = f"M {cx} {cy - r} a {r} {r} 0 1 1 0 {2 * r} a {r} {r} 0 1 1 0 {-2 * r}"
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{BW}" height="{BH}" viewBox="0 0 {BW} {BH}" role="img" aria-label="BrightLoop Lab, a lab that builds itself: {escape(" ".join(desc))}">
+<style>
+  .label {{ font: 600 12px {MONO}; fill: {c["accent"]}; letter-spacing: 1.8px; }}
+  .title {{ font: 800 36px {SANS}; fill: {c["text"]}; letter-spacing: -.8px; }}
+  .desc  {{ font: 400 15.5px {SANS}; fill: {c["muted"]}; }}
+  .chip  {{ font: 500 12px {MONO}; fill: {c["text"]}; }}
+  .node  {{ font: 600 12px {MONO}; fill: {c["text"]}; letter-spacing: 1.2px; }}
+  .time  {{ font: 600 13px {MONO}; fill: {c["muted"]}; letter-spacing: 1px; }}
+</style>
+<defs>
+  <pattern id="ldots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="{c["dot"]}"/></pattern>
+  <radialGradient id="lglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="{c["accent"]}" stop-opacity=".22"/><stop offset="1" stop-color="{c["accent"]}" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="lframe"><rect width="{BW}" height="{BH}" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#lframe)">
+  <rect width="{BW}" height="{BH}" fill="{c["panel"]}"/>
+  <rect x="560" width="{BW - 560}" height="{BH}" fill="url(#ldots)"/>
+  <circle cx="{cx}" cy="{cy}" r="170" fill="url(#lglow)"/>
+  <rect x="0" y="26" width="3" height="46" rx="1.5" fill="{c["accent"]}"/>
+  <text x="48" y="48" class="label">BRIGHTLOOP LAB · LIVE</text>
+  <text x="46" y="94" class="title">A lab that builds itself</text>
+  {lines}
+  {"".join(chips)}
+  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{c["border"]}" stroke-width="2"/>
+  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{c["accent"]}" stroke-width="2" stroke-dasharray="2 10" opacity=".55"/>
+  <circle r="7" fill="{c["accent2"]}"><animateMotion dur="9s" repeatCount="indefinite" path="{ring}"/></circle>
+  {"".join(pills)}
+  <g transform="translate({cx - 11} {cy - 26})" fill="{c["accent2"]}"><path d="M14 2a10 10 0 1 0 8 15A8 8 0 0 1 14 2z"/></g>
+  <text x="{cx}" y="{cy + 22}" text-anchor="middle" class="time">NIGHTLY</text>
+  <g transform="translate({BW - 50} 22)" stroke="{c["muted"]}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 L18 6 M9 6 H18 V15"/></g>
+</g>
+<rect x=".75" y=".75" width="{BW - 1.5}" height="{BH - 1.5}" rx="15.25" fill="none" stroke="{c["border"]}" stroke-width="1.5"/>
+</svg>'''
+
+
 for theme, c in THEMES.items():
+    (OUT / f"card-lab-{theme}.svg").write_text(lab_banner(c))
     (OUT / f"header-{theme}.svg").write_text(header(c))
     for slug, label, title, linked, desc, chips in CARDS:
         (OUT / f"card-{slug}-{theme}.svg").write_text(card(c, label, title, linked, desc, chips))
