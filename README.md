@@ -15,13 +15,20 @@ The lab runs in production. Each night a director agent plans the work, builder 
 
 ## Experience
 
-| | | |
-|---|---|---|
-| 2025–26 | **Celtra**<br><sub>Software engineer</sub> | Built a custom AI assistant that operates internal TypeScript software for its users, with suggested prompts, per-action feedback and changes gated by LLM-as-a-judge evals. |
-| 2023–24 | **FirstClass**<br><sub>Forward-deployed engineer</sub> | Built a Python pipeline that turns PDF attachments in Outlook into published reports with charts, cutting manual work by about 90%. |
-| 2022–23 | **RESULT**<br><sub>Mobile developer</sub> | Took a Flutter app that insurance agencies use to report and mark vehicle damage from first commit to release. |
-| 2022 | **Kamino**<br><sub>Mobile developer</sub> | Built a travel and ride-sharing app in Flutter from scratch, on real-time third-party data. |
-| 2021 | **EFOS**<br><sub>Full-stack developer</sub> | Built a Vue and Cordova app for the Slovenian Ministry of Agriculture, with a Java EE and Oracle backend. |
+**Celtra** &nbsp;<sub>Software engineer, 2025–26</sub><br>
+Built a custom AI assistant that operates internal TypeScript software for its users, with suggested prompts, per-action feedback and changes gated by LLM-as-a-judge evals.
+
+**FirstClass** &nbsp;<sub>Forward-deployed engineer, 2023–24</sub><br>
+Built a Python pipeline that turns PDF attachments in Outlook into published reports with charts, cutting manual work by about 90%.
+
+**RESULT** &nbsp;<sub>Mobile developer, 2022–23</sub><br>
+Took a Flutter app that insurance agencies use to report and mark vehicle damage from first commit to release.
+
+**Kamino** &nbsp;<sub>Mobile developer, 2022</sub><br>
+Built a travel and ride-sharing app in Flutter from scratch, on real-time third-party data.
+
+**EFOS** &nbsp;<sub>Full-stack developer, 2021</sub><br>
+Built a Vue and Cordova app for the Slovenian Ministry of Agriculture, with a Java EE and Oracle backend.
 
 ## Projects
 
