@@ -2,38 +2,38 @@
 
 **Open to work from December 2026** as a mobile, front-end, full-stack or AI engineer. Reach me on [LinkedIn](https://www.linkedin.com/in/erik-pahor/) or at [mutemuty1@gmail.com](mailto:mutemuty1@gmail.com).
 
-I've spent four years shipping Flutter apps used in the field, Vue and React front-ends, and most recently an AI assistant that operates software for its users. I use agentic tools like Claude Code every day and review every line they write. MSc in Computer and Information Science from the University of Ljubljana; based in Nova Gorica, hybrid in Ljubljana.
+I've spent four years shipping Flutter apps used in the field, Vue and React front-ends, and most recently an AI assistant that operates software for its users. I use agentic tools like Claude Code every day and review every line they write. MSc in Computer and Information Science from the University of Ljubljana; based in Nova Gorica, Slovenia.
 
 ## Now
 
 <p>
-  <a href="https://lab.brightloopapps.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-lab-dark.svg"><img alt="BrightLoop Lab: a lab that builds itself. Every night, agents pick ideas from the queue, build and playtest them, and ship only what passes." src="assets/now-lab-light.svg" width="49%"></picture></a>
-  <a href="https://breza-app.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-breza-dark.svg"><img alt="Breza: a calm, private way to quit vaping, for iOS and Android." src="assets/now-breza-light.svg" width="49%"></picture></a>
+  <a href="https://lab.brightloopapps.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-lab-dark.svg"><img alt="BrightLoop Lab: a lab that builds itself. On the nights it runs, agents pick ideas from the queue, build and playtest them, and ship only what passes." src="assets/now-lab-light.svg" width="49%"></picture></a>
+  <a href="https://breza-app.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-breza-dark.svg"><img alt="Breza: a private quit vaping app for iPhone and Android." src="assets/now-breza-light.svg" width="49%"></picture></a>
 </p>
 
-The lab runs in production. Each night a director agent plans the work, builder agents open pull requests, an independent playtester checks every one in a real browser, and only a pass is deployed, with automatic rollback. [See how it works](https://github.com/MuteMuty/lab#how-it-works), or play [Afterstep](https://afterstep.brightloopapps.com/), its daily puzzle.
+The lab is in production. On the nights it runs, a director agent plans the work, builder agents open pull requests, an independent playtester checks each one in a real browser, and only a pass is deployed, with automatic rollback. [See how it works](https://github.com/MuteMuty/lab#how-it-works), or play [Afterstep](https://afterstep.brightloopapps.com/), its daily puzzle.
 
 ## Experience
 
-**Celtra** &nbsp;<sub>Software engineer, 2025–26</sub><br>
-Built a custom AI assistant that operates internal TypeScript software for its users, with suggested prompts, per-action feedback and changes gated by LLM-as-a-judge evals.
+**Celtra** &nbsp;<sub>Software Engineer, 2025 – 2026</sub><br>
+Integrated a custom AI assistant into Celtra's internal TypeScript software as part of a team. My part was the integration and extending what it could do, including suggested prompts. Changes to the assistant were gated by LLM-as-a-judge evals, and users could rate each action it took.
 
-**FirstClass** &nbsp;<sub>Forward-deployed engineer, 2023–24</sub><br>
+**FirstClass** &nbsp;<sub>Forward Deployed Engineer, 2023 – 2024</sub><br>
 Built a Python pipeline that turns PDF attachments in Outlook into published reports with charts, cutting manual work by about 90%.
 
-**RESULT** &nbsp;<sub>Mobile developer, 2022–23</sub><br>
-Took a Flutter app that insurance agencies use to report and mark vehicle damage from first commit to release.
+**RESULT** &nbsp;<sub>Mobile Application Developer, 2022 – 2023</sub><br>
+Built features for a Flutter app that insurance agencies use to report and mark vehicle damage, and took them through to release.
 
-**Kamino** &nbsp;<sub>Mobile developer, 2022</sub><br>
+**Kamino** &nbsp;<sub>Mobile Application Developer, 2022</sub><br>
 Built a travel and ride-sharing app in Flutter from scratch, on real-time third-party data.
 
-**EFOS** &nbsp;<sub>Full-stack developer, 2021</sub><br>
+**EFOS** &nbsp;<sub>Full-Stack Developer, 2021</sub><br>
 Built a Vue and Cordova app for the Slovenian Ministry of Agriculture, with a Java EE and Oracle backend.
 
 ## Projects
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-dragonhack-dark.svg"><img alt="DragonHack 2024 winner, Best Software Hack: counts push-ups with pose estimation." src="assets/project-dragonhack-light.svg" width="49%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-dragonhack-dark.svg"><img alt="DragonHack 2024: Best Software Hack. Co-built an app that counts push-ups with on-device pose estimation." src="assets/project-dragonhack-light.svg" width="49%"></picture>
   <a href="https://github.com/MuteMuty/extreme-weather-event-notifier"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-weather-dark.svg"><img alt="Extreme Weather Notifier: alerts for extreme weather in Slovenia." src="assets/project-weather-light.svg" width="49%"></picture></a>
   <a href="https://github.com/MuteMuty/telco-churn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-churn-dark.svg"><img alt="Telco Churn Prediction: spots 3 in 4 customers about to leave." src="assets/project-churn-light.svg" width="49%"></picture></a>
   <a href="https://github.com/MuteMuty/ioi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-pitch-dark.svg"><img alt="Pitch Control: a Flutter game you steer with your voice." src="assets/project-pitch-light.svg" width="49%"></picture></a>

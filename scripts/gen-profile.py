@@ -25,10 +25,10 @@ FONT_SRC, OUT = Path(sys.argv[1]), Path(sys.argv[2])
 OUT.mkdir(parents=True, exist_ok=True)
 
 THEMES = {
-    "light": dict(panel="#FFFFFF", paper="#F3F6F9", ink="#19223A", ink2="#4D5A70", rule="#D8DFE8",
-                  faint="#E9EEF4", sun="#F0AE2E"),
-    "dark": dict(panel="#111A2C", paper="#0D1424", ink="#EDF1F6", ink2="#A3B0C4", rule="#25304A",
-                 faint="#1A2439", sun="#F5BD4F"),
+    "light": dict(panel="#FFFFFF", paper="#F1F7FB", ink="#101C34", ink2="#4D5A70", rule="#D8DFE8",
+                  faint="#E9EEF4", sun="#FEB41F"),
+    "dark": dict(panel="#111A2C", paper="#091121", ink="#E9F0F5", ink2="#A3B0C4", rule="#25304A",
+                 faint="#1A2439", sun="#FDBE45"),
 }
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif"
 DISPLAY = "'Bricolage', 'Arial Black', 'Helvetica Neue', Arial, sans-serif"
@@ -39,18 +39,18 @@ HERO_LINES = ["I build mobile, web and AI products,", "and run a small app studi
 
 NOW = [
     dict(slug="lab", title="BrightLoop Lab",
-         lines=["A lab that builds itself. Every night, agents", "pick ideas from the queue, build and playtest",
-                "them, and ship only what passes."],
+         lines=["A lab that builds itself. On the nights it", "runs, agents pick ideas from the queue, build",
+                "and playtest them, and ship only what passes."],
          foot="Play it at lab.brightloopapps.com"),
     dict(slug="breza", title="Breza",
-         lines=["A calm, private way to quit vaping, for iOS", "and Android. No ads, no accounts, and what",
-                "you record stays on your phone."],
+         lines=["A private quit vaping app for iPhone and", "Android. No ads, no accounts, and what you",
+                "record stays on your phone."],
          foot="Coming soon to the App Store and Google Play"),
 ]
 
 PROJECTS = [
-    dict(slug="dragonhack", title="DragonHack winner", glyph="medal", linked=False,
-         line="Counts push-ups with pose estimation.", tech="Best Software Hack 2024. Flutter, on-device ML"),
+    dict(slug="dragonhack", title="DragonHack 2024: Best Software Hack", title_size=18, glyph="medal", linked=False,
+         line="Co-built an app that counts push-ups.", tech="Flutter, on-device pose estimation"),
     dict(slug="weather", title="Extreme Weather Notifier", glyph="bolt", linked=True,
          line="Alerts for extreme weather in Slovenia.", tech="Vue, TypeScript, Kubernetes, GitHub Actions"),
     dict(slug="churn", title="Telco Churn Prediction", glyph="curve", linked=True,
@@ -137,7 +137,7 @@ def lab_picture(c, cx, cy):
 
 
 def breza_picture(c, cx, cy):
-    """Breza's own app mark, as it appears on the App Store."""
+    """Breza's own app mark, as it will appear in the stores."""
     s = 1.9
     return (f'<g transform="translate({cx - 32 * s} {cy - 32 * s}) scale({s})">'
             '<rect width="64" height="64" rx="15" fill="#C25E3B"/>'
@@ -184,7 +184,7 @@ def project_card(c, p):
              f'stroke-linecap="round" stroke-linejoin="round"/>') if p["linked"] else ""
     body = (f'<rect x="14" y="14" width="{h - 28}" height="{h - 28}" rx="12" fill="{c["paper"]}"/>'
             f'{glyph(p["glyph"], c, 14 + (h - 28) / 2, h / 2)}'
-            f'<text x="{h + 4}" y="58" class="display" font-size="24" letter-spacing="-.5">{escape(p["title"])}</text>'
+            f'<text x="{h + 4}" y="58" class="display" font-size="{p.get("title_size", 24)}" letter-spacing="-.5">{escape(p["title"])}</text>'
             f'<text x="{h + 6}" y="88" class="body" font-size="15.5">{escape(p["line"])}</text>'
             f'<text x="{h + 6}" y="114" class="body" font-size="13.5" fill-opacity=".8">{escape(p["tech"])}</text>{arrow}')
     return frame(w, h, c, body, f'{p["title"]}. {p["line"]} {p["tech"]}.')
