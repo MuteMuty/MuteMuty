@@ -35,7 +35,7 @@ DISPLAY = "'Bricolage', 'Arial Black', 'Helvetica Neue', Arial, sans-serif"
 
 # ---------------------------------------------------------------- content
 HERO_NAME = "Erik Pahor"
-HERO_LINES = ["I build mobile, web and AI products,", "and run a small app studio in Slovenia."]
+HERO_LINES = ["I build mobile, web and AI products,", "and make apps as BrightLoopApps."]
 
 NOW = [
     dict(slug="lab", title="BrightLoop Lab",
@@ -52,7 +52,7 @@ PROJECTS = [
     dict(slug="dragonhack", title="DragonHack 2024: Best Software Hack", title_size=18, glyph="medal", linked=False,
          line="Co-built an app that counts push-ups.", tech="Flutter, on-device pose estimation"),
     dict(slug="weather", title="Extreme Weather Notifier", glyph="bolt", linked=True,
-         line="Alerts for extreme weather in Slovenia.", tech="Vue, TypeScript, Kubernetes, GitHub Actions"),
+         line="Co-built alerts for extreme weather.", tech="Coursework, team of two. Nuxt, TypeScript"),
     dict(slug="churn", title="Telco Churn Prediction", glyph="curve", linked=True,
          line="Spots 3 in 4 customers about to leave.", tech="Python, scikit-learn. ROC-AUC 0.84"),
     dict(slug="pitch", title="Pitch Control", glyph="wave", linked=True,
