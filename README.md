@@ -36,16 +36,16 @@ Built a Vue and Cordova app for the Slovenian Ministry of Agriculture, with a Ja
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-dragonhack-dark.svg"><img alt="DragonHack 2024: Best Software Hack. Co-built an app that counts push-ups with on-device pose estimation." src="assets/project-dragonhack-light.svg" width="49%"></picture>
   <a href="https://github.com/MuteMuty/extreme-weather-event-notifier"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-weather-dark.svg"><img alt="Extreme Weather Notifier: co-built with a classmate as Cloud Computing coursework at the University of Ljubljana. Alerts for extreme weather in Slovenia." src="assets/project-weather-light.svg" width="49%"></picture></a>
   <a href="https://github.com/MuteMuty/telco-churn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-churn-dark.svg"><img alt="Telco Churn Prediction: spots 3 in 4 customers about to leave." src="assets/project-churn-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/MuteMuty/ioi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-pitch-dark.svg"><img alt="Pitch Control: a Flutter game you steer with your voice." src="assets/project-pitch-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/MuteMuty/pitch-control"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-pitch-dark.svg"><img alt="Pitch Control: a Flutter game you steer with your voice." src="assets/project-pitch-light.svg" width="49%"></picture></a>
 </p>
 
 <details>
 <summary>More projects</summary>
 <br>
 
-- **[Apartment Listings](https://github.com/MuteMuty/luxonis)**: scraped real-estate listings in an ad-free React app with PostgreSQL and Docker
-- **[Vectura](https://github.com/MuteMuty/vectura)**: Flutter ride-sharing app with real-time tracking and maps
-- **[Src](https://github.com/MuteMuty/src)**: Flutter demo web shop and marketplace
+- **[Apartment Listings](https://github.com/MuteMuty/apartment-listings)**: a take-home task. Scrapes apartment listings into PostgreSQL and shows them in an ad-free React app, all started with Docker Compose
+- **[Vectura](https://github.com/MuteMuty/vectura)**: Flutter ride-sharing app to offer, search and join rides, with maps and Bloc
+- **[Flutter Web Shop](https://github.com/MuteMuty/flutter-web-shop)**: mock shopping app on the DummyJSON API, with search, cart and user switching
 - **[Weather](https://github.com/MuteMuty/weather)**: Flutter forecast app with real-time updates and alerts
 - **[Drink](https://github.com/MuteMuty/APPdrink)**: Flutter hydration tracker with reminders
 
