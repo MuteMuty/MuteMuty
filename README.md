@@ -46,8 +46,8 @@ Built a Vue and Cordova app for the Slovenian Ministry of Agriculture, with a Ja
 - **[Apartment Listings](https://github.com/MuteMuty/apartment-listings)**: a take-home task. Scrapes apartment listings into PostgreSQL and shows them in an ad-free React app, all started with Docker Compose
 - **[Vectura](https://github.com/MuteMuty/vectura)**: Flutter ride-sharing app to offer, search and join rides, with maps and Bloc
 - **[Flutter Web Shop](https://github.com/MuteMuty/flutter-web-shop)**: mock shopping app on the DummyJSON API, with search, cart and user switching
-- **[Weather](https://github.com/MuteMuty/weather)**: Flutter forecast app with real-time updates and alerts
-- **[Drink](https://github.com/MuteMuty/APPdrink)**: Flutter hydration tracker with reminders
+- **[Weather](https://github.com/MuteMuty/weather)**: Flutter weather app for Slovenia on the Slovenian Environment Agency's forecast API
+- **[Drink](https://github.com/MuteMuty/APPdrink)**: Flutter app that reminds you to drink water through the day
 
 </details>
 
